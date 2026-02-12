@@ -73,7 +73,7 @@ cnn.fit(x = training_set,validation_data = test_set, epochs = 25)
 #Part4 - Making a single prediction
 import numpy as np
 from keras.preprocessing import image
-test_image = image.load_img('data/single_prediction/Dog.p.png',target_size=(64,64))
+test_image = image.load_img('D:\machine_learning\deep_learning\data\predict\dog1.jpg',target_size=(64,64))
 test_image = image.img_to_array(test_image)
 test_image = np.expand_dims(test_image,axis=0)
 # دلیل سه بعدی بودن اینه که مدل سی ان ان ما با دسته های 32 تایی یاد گرفته و دسته ها توی بعد سوم بودن پس ما باید به عکسمون یه بعد اضافه کنیم
